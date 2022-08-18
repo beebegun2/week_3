@@ -55,7 +55,28 @@ var fullName = createFullName('Tom', 'Sawyer');
 console.log('Welcome, ' + fullName);
 
 // create a function called reverse that takes in parameter
+// ages(ages.length) to find last element of the array
+/*variable only .. think of numberParameter as the alias to myNumber in this example*/
+let myNumber = 5
+let myNewNumber = 10
+function reverseFunction(numberParameter){
+    console.log("I think this will read 5:", numberParameter)
+    return numberParameter += 20;
+}
+console.log("This is calling my reverse function", reverseFunction (myNumber))
 
+/* this is the function */
+let myAddition = (abc) => {
+    console.log("I think this will show :", abc)
+    return abc += 20;
+}
+/*calling function */
+ console.log("This is calling my reverse arrow function", myAddition (myNumber))
+ console.log("This is calling my reverse arrow function a second time:", myAddition (myNewNumber)) //myNewNumber was line 61: 10
+
+
+var fullName = createFullName('Shannon', 'Beebe');
+console.log('Welcome, ' + fullName);
 
 // this function will return the opposite of whatever is passed in
 // if its a boolean, return the opposite
